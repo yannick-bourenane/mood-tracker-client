@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "RPGSystem";
+  src: url("./fonts/RPGSystem.ttf") format("truetype");
+}
+
+@import "./charts.css";
+@import "./form.css";
+@import "./header.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow {
+  box-shadow: 0px 10px 14px -7px #899599;
+}
+
+.shadow-btns {
+  box-shadow: 0 2px 2px rgba(0,0,0,.2) inset, 0 0 0 rgba(0,0,0,0);
+}
+
+.shadow-btns:hover, .shadow-btns:active {
+  box-shadow: 0 0 0 rgba(0,0,0,0) inset,
+			0 2px 2px rgba(0,0,0,.1),
+			0 4px 4px rgba(0,0,0,.1),
+			0 8px 8px rgba(0,0,0,.1);
+}
+
+.page {
+  padding: 20px 0 0 0;
+}
+
+.content-wrapper {
+  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+h1 { font-size:1.5rem; }
+h2 { font-size:1.2rem; }

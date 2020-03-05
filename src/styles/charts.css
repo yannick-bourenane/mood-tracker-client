@@ -1,0 +1,154 @@
+.good-bg-color.is-selected,
+.good-bg-color:hover {
+    background-color: #FF9AA1;
+    border-color: #FF9AA1;
+    color: #FFF;
+}
+
+.good-bg-color {
+    color: #FF9AA1;
+    font-weight: bold;
+    border-color: #FF9AA1;
+}
+
+.bad-bg-color {
+    color: #C7CEEA;
+    font-weight: bold;
+    border-color: #C7CEEA;
+}
+
+.both-bg-color {
+    color: #B5EAD7;
+    font-weight: bold;
+    border-color: #B5EAD7;
+}
+
+.bad-bg-color.is-selected,
+.bad-bg-color:hover {
+    background-color: #C7CEEA;
+    border-color: #C7CEEA;
+    color: #FFF;
+}
+
+.both-bg-color.is-selected,
+.both-bg-color:hover {
+    background-color: #B5EAD7;
+    border-color: #B5EAD7;
+    color: #FFF;
+}
+
+.button.is-info,
+.button.is-info:hover {
+    background-color: #FFB7B2;
+    border: 1px solid #333;
+    color: #363636;
+}
+
+.button.is-basic,
+.button.is-basic:hover {
+    background-color: #FFF;
+    border: 1px solid #FFB7B2;
+    color: #363636;
+}
+
+.chartsbymood,
+.chartsbymood .slidecontainer {
+    width: 280px;
+}
+
+.chartsbymood .slidecontainer {
+    margin-bottom: 20px;
+}
+
+.filterMood {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.filterMood #filterbymood {
+    margin-right: 10px;
+    -webkit-appearance: none;
+    /* Hides the default checkbox style */
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: .15s;
+    border-radius: 2em;
+    background-color: #FFF;
+    border: 1px solid #FFB7B2;
+}
+
+.filterMood #filterbymood:focus {
+    outline: none;
+}
+
+.filterMood #filterbymood:checked {
+    background-color: #FFB7B2;
+    border: 1px solid #333;
+}
+
+.filterMood #filterbymood:before,
+.filterMood #filterbymood:checked:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5em;
+    text-align: center;
+    color: #fff;
+    content: '';
+}
+
+.filterMood #filterbymood:checked:before {
+    content: '✔';
+}
+
+.filterMood #filterbymood:hover:before {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* .chartsbymood .slidecontainer input {
+    width: 370px;
+}
+ */
+.chartsbymood .emoji {
+    max-width: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    left: -15px;
+}
+
+.bubble-chart {
+    min-height: 306px;
+    display: flex;
+    justify-content: center;
+}
+
+.gif-egg {
+    width: 50px;
+}
+
+.container.flex {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble-chart .notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+.bubble-chart .notification img {
+    margin-top: 10px;
+    width: 120px;
+}

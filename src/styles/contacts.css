@@ -1,0 +1,30 @@
+.contacts-page p {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.contacts-page form { margin: 20px 0; }
+
+.contacts-page .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts-page .btn-add {
+    padding: 8px 20px;
+    background-color: #FFDAC1;
+    border: 1px solid #FFDAC1;
+}
+
+.contacts-page .contact-item {
+  border:1px solid #d8d8d8;
+  border-radius: 15px;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+.contacts-page .contact-delete {
+  color:#ff9aa1;
+  cursor: pointer;
+}

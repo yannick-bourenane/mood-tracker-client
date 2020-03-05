@@ -1,0 +1,37 @@
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    /* padding: 10px 10px 0; */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.navlinks {
+    color: #333;
+}
+
+.btn-back {
+    color: #ff9aa2;
+    font-size: 26px;
+    border: none;
+    background-color: #fff;
+}
+
+.navbar .btn-profile {
+    color: #c7ceea;
+    font-size: 26px;
+}
+
+.navbar .img-logo {
+    margin-top: 5px;
+    width: 180px;
+}
+
+.navbar .img-icon {
+    width: 40px;
+}
