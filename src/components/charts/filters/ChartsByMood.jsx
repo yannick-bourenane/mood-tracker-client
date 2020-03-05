@@ -57,7 +57,7 @@ const ChartsByMood = ({
           <label htmlFor="filterbymood">Filter by mood </label>
         </div>
         <div
-          className={`chartsbymood ${isChecked ? "slideRight" : "is-hidden"}`}
+          className={`chartsbymood ${isChecked ? "fadeIn" : "is-hidden"}`}
         >
           <img
             className="emoji"
