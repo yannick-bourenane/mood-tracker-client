@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import "bulma/css/bulma.css";
 
 import Navbar from "./components/Navbar";
@@ -19,7 +19,7 @@ import UserContext from "./auth/UserContext";
 import { ProtectedRoute } from "./auth/ProtectedRoute";
 
 function App({ location }) {
-  const { isLoading } = useAuth();
+  const { isLoading, isLoggedIn } = useAuth();
   const [currentUser, setCurrentUser] = useState({});
 
   // check src/auth/UserContext =>
@@ -45,6 +45,7 @@ function App({ location }) {
             <ProtectedRoute path="/daymood/new" component={TrackMood} />
             <ProtectedRoute path="/stats" component={Stats} />
             <ProtectedRoute path="/contacts" component={Contacts} />
+            
             <Route path="*" component={NotFound} />
           </Switch>
         </div>

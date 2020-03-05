@@ -1,8 +1,16 @@
 import React from "react";
+import { Redirect } from "react-router-dom";
+import { useAuth } from "../auth/useAuth";
 import Signin from "../components/form/Signin";
 import AuthHeader from "../components/AuthHeader";
 
 const Login = () => {
+
+  const {isLoading,  isLoggedIn } = useAuth();
+
+  if(isLoading) return <div className="flex-center-column loading"><img className="spinner loading-img" src="/images/loading.gif" /></div>
+  if(isLoggedIn) return <Redirect to="/dashboard" />
+
   return (
     <div className="form-page">
       <AuthHeader />

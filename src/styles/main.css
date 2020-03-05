@@ -31,14 +31,19 @@
 }
 
 .shadow-btns {
-  box-shadow: 0 2px 2px rgba(0,0,0,.2) inset, 0 0 0 rgba(0,0,0,0);
-}
-
-.shadow-btns:hover, .shadow-btns:active {
+  /* box-shadow: 0 2px 2px rgba(0,0,0,.2) inset, 0 0 0 rgba(0,0,0,0); */
   box-shadow: 0 0 0 rgba(0,0,0,0) inset,
 			0 2px 2px rgba(0,0,0,.1),
 			0 4px 4px rgba(0,0,0,.1),
 			0 8px 8px rgba(0,0,0,.1);
+}
+
+.shadow-btns:hover, .shadow-btns:active {
+  box-shadow: 0 2px 2px rgba(0,0,0,.2) inset, 0 0 0 rgba(0,0,0,0);
+  /* box-shadow: 0 0 0 rgba(0,0,0,0) inset,
+			0 2px 2px rgba(0,0,0,.1),
+			0 4px 4px rgba(0,0,0,.1),
+			0 8px 8px rgba(0,0,0,.1); */
 }
 
 .page {
@@ -54,3 +59,11 @@
 
 h1 { font-size:1.5rem; }
 h2 { font-size:1.2rem; }
+
+img.loading-img {
+  width: 50px;
+}
+
+div.loading {
+  padding-top: 100px;
+}
