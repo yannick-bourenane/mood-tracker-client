@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
-import { useAuth } from "../auth/useAuth";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faFastForward } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { format } from 'date-fns';
 import Collapse from "../components/tracker/Collapse";
 import "../styles/tracker.css";
@@ -20,6 +19,7 @@ const TrackMood = ({ history }) => {
   });
   const [btnClicked, setClicked] = useState(false);
   const [dataSaved, setDataSaved] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
 
   const updateTags = (val) => {
@@ -38,7 +38,7 @@ const TrackMood = ({ history }) => {
       setSliderValue(Number(existingMood.mood))
       setTags({ positive : existingMood.k_good, negative: existingMood.k_bad })
       setDataSaved(true)
-
+      setIsLoading(false)
     })
     .catch(err => console.error(err))
 
@@ -68,12 +68,11 @@ const TrackMood = ({ history }) => {
     .catch(err => console.error(err))
   }
 
-  const { isLoading } = useAuth();
-  if(isLoading) return <div className="flex-center-column loading"><img className="spinner loading-img" src="/images/loading.gif" /></div>
 
   return (
     <>
-    <div className="moodpage" style={{backgroundColor:"#fff"}}>
+    {isLoading && <div className="flex-center-column loading"><img className="spinner loading-img" src="/images/loading.gif" /></div>}
+    <div className={isLoading ? "is-hidden" : "moodpage"} style={{backgroundColor:"#fff"}}>
       <p className="date">{format(new Date(), "'Today is' PPPP")}</p>
       { !!dataSaved ? (
         <h1>Today you are feeling...</h1>
