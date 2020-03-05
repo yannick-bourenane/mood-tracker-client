@@ -19,7 +19,7 @@ import UserContext from "./auth/UserContext";
 import { ProtectedRoute } from "./auth/ProtectedRoute";
 
 function App({ location }) {
-  const { isLoading, isLoggedIn } = useAuth();
+  const { isLoading } = useAuth();
   const [currentUser, setCurrentUser] = useState({});
 
   // check src/auth/UserContext =>
