@@ -49,7 +49,6 @@ const Stats = () => {
     setIsChecked(!isChecked);
   };
   const handleEggPosition = position => {
-    console.log(position);
     setEggPosition(position);
   };
   useEffect(() => {
@@ -68,7 +67,6 @@ const Stats = () => {
 
   return (
     <section className="section">
-      {console.log(eggPosition)}
       {/*       <h1 className="title has-text-centered">
         <img
           className="gif-egg"

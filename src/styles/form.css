@@ -1,8 +1,8 @@
 /* GENERAL CSS FOR ALL FORMS */
 
 .control input {
-  border-radius: 20px;
-  padding: 0 8px;
+    border-radius: 20px;
+    padding: 0 8px;
 }
 
 /* LOGIN FORM */
@@ -101,4 +101,14 @@
 .profile .accordion__item+.accordion__item {
     width: 100%;
     border: none;
+}
+
+.profile .notification.is-successful {
+    background-color: #FFF;
+    color: green
+}
+
+.profile .notification.is-dangerous {
+    background-color: #FFF;
+    color: red
 }

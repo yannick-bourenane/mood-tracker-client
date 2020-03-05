@@ -52,11 +52,17 @@ export default withRouter(function EditProfile(props) {
     try {
       const apiRes = await APIHandler.patch("/user", payload);
       setCurrentUser(apiRes.data.currentUser);
-      setMsg(<div className="notification is-success">{apiRes.data.msg}</div>);
+      setMsg(
+        <div className="notification is-successful has-text-centered">
+          {apiRes.data.msg}
+        </div>
+      );
       props.history.push("/profile");
     } catch (err) {
       setMsg(
-        <div className="notification is-danger">{err.response.data.msg}</div>
+        <div className="notification is-dangerous has-text-centered">
+          {err.response.data.msg}
+        </div>
       );
     }
   };
@@ -64,7 +70,9 @@ export default withRouter(function EditProfile(props) {
     <Accordion allowZeroExpanded="true">
       <AccordionItem>
         <AccordionItemHeading>
-          <AccordionItemButton className="btn-edit">Edit Profile</AccordionItemButton>
+          <AccordionItemButton className="btn-edit">
+            Edit Profile
+          </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
           {msg && msg}

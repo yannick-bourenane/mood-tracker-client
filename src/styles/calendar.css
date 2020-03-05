@@ -205,6 +205,10 @@ header {
     margin: 0 auto;
 }
 
+.calendar {
+    max-width: 500px;
+}
+
 /* Responsive */
 
 @media screen and (max-width:600px) {

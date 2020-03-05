@@ -41,10 +41,8 @@ const ChartsByMood = ({
 }} */
   return (
     <>
-      {eggPosition && console.log(eggPosition)}
       <div className="container flex">
         <div className="filterMood">
-          {console.log(isChecked)}
           <input
             type="checkbox"
             id="filterbymood"
