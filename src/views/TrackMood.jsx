@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import { useAuth } from "../auth/useAuth";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faFastForward } from '@fortawesome/free-solid-svg-icons';
 import { format } from 'date-fns';
@@ -10,6 +11,7 @@ import moodScale from "../data/mood_scale";
 import APIHandler from "../api/APIHandler";
 
 const TrackMood = ({ history }) => {
+
   const [sliderValue, setSliderValue] = useState(5);
   const [colorValue, setColorValue] = useState("");
   const [tags, setTags] = useState({
@@ -18,6 +20,7 @@ const TrackMood = ({ history }) => {
   });
   const [btnClicked, setClicked] = useState(false);
   const [dataSaved, setDataSaved] = useState(false);
+
 
   const updateTags = (val) => {
     setTags(val)
@@ -65,7 +68,8 @@ const TrackMood = ({ history }) => {
     .catch(err => console.error(err))
   }
 
-  // fetch data and display on daymood/edit
+  const { isLoading } = useAuth();
+  if(isLoading) return <div className="flex-center-column loading"><img className="spinner loading-img" src="/images/loading.gif" /></div>
 
   return (
     <>
