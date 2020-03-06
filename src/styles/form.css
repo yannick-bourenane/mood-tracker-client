@@ -1,114 +1,115 @@
 /* GENERAL CSS FOR ALL FORMS */
 
 .control input {
-    border-radius: 20px;
-    padding: 0 8px;
+  border-radius: 20px;
+  padding: 0 8px;
 }
 
 /* LOGIN FORM */
 
 .form-page {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-page .title {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .form-page p.parag {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .form-wrapper {
-    /* width: 300px; */
-    padding: 30px 0;
+  /* width: 300px; */
+  padding: 30px 0;
 }
 
 /* PROFILE */
 
 .profile {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
-    font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  font-size: 12px;
 }
 
 .profile .input {
-    min-width: 300px;
-    border-radius: 20px;
-    padding: 0 8px;
+  min-width: 300px;
+  border-radius: 20px;
+  padding: 0 8px;
 }
 
 .icon {
-    margin: 10px;
+  margin: 10px;
 }
 
 .button {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .btn-submit {
-    margin: 8px 0;
-    background-color: #b5ead7;
-    border: 1px solid #333;
+  margin: 8px 0;
+  background-color: #b5ead7;
+  border: 1px solid #333;
 }
 
 .btn-logout {
-    margin: 10px auto;
-    width: 100%;
-    background-color: #ffb7b2;
-    border: 1px solid #333;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #ffb7b2;
+  border: 1px solid #333;
 }
 
 /* ACCORDION */
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile .accordion {
-    width: 300px;
-    border: none;
+  width: 300px;
+  border: none;
 }
 
 .profile .btn-edit {
-    width: 100%;
-    font-size: 1rem;
-    text-align: center;
-    padding: 8px;
-    background-color: #fff;
-    border: 1px solid #ffb7b2;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ffb7b2;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .profile .accordion__panel {
-    width: 100%;
-    padding: 10px 0;
-
+  width: 100%;
+  padding: 10px 0;
 }
 
-.profile .accordion__item+.accordion__item {
-    width: 100%;
-    border: none;
+.profile .accordion__item + .accordion__item {
+  width: 100%;
+  border: none;
 }
 
 .profile .notification.is-successful {
-    background-color: #FFF;
-    color: green
+  background-color: #fff;
+  color: green;
+  font-size: 14px;
 }
 
 .profile .notification.is-dangerous {
-    background-color: #FFF;
-    color: red
+  background-color: #fff;
+  color: red;
+  font-size: 14px;
 }

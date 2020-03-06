@@ -15,7 +15,7 @@ const Stats = () => {
   const [statType, setStatType] = useState("moodscore");
 
   // filter by date (default : this week)
-  const [filterByDate, setFilterByDate] = useState("last7");
+  const [filterByDate, setFilterByDate] = useState("last365");
 
   const [filterByType, setFilterByType] = useState("t_both");
 
