@@ -7,8 +7,8 @@ import IconPassword from "../icon/IconPassword";
 import IconMail from "../icon/IconMail";
 
 export default withRouter(function Signin(props) {
-  const [email, setEmail] = useState("john.doe@domain.com");
-  const [password, setPassword] = useState("toto");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const userContext = useContext(UserContext);
   const { setCurrentUser } = userContext;
