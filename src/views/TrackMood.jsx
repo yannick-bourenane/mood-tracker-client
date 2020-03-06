@@ -32,7 +32,10 @@ const TrackMood = ({ history }) => {
       let existingMood = res.data[0];
 
       // If no previous data, do nothing
-      if (!existingMood) return;
+      if (!existingMood) {
+        setIsLoading(false);
+        return;
+      }
 
       // Otherwise, set current day mood
       setSliderValue(Number(existingMood.mood))
